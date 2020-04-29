@@ -1,3 +1,126 @@
-@import 'vars';
-@import 'global';
+@import "vars";
+@import "global";
+@import "fonts";
 
+
+//header start
+
+.header {
+    background-image: url(../images/bigheader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+.header__logo{
+    position: relative;
+    width: 67px;
+    height: 67px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 8px;
+    margin-left: 13px;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 67px;
+        height: 67px;
+        background-image: url(../images/logo.png);
+        top: -8px;
+        left: -13px;
+    }
+}
+.menu {
+    max-width: 700px;
+        width: 100%;
+        
+    &__list {            
+        display: flex;
+        justify-content: space-between;
+        a{
+            padding: 0 10px;
+            position: relative;
+            font-size: 20px;
+            line-height: 30px;
+            &::after{
+                content: "";
+                height: 6px;
+                width: 100%;
+                background-color: transparent;
+                position: absolute;
+                bottom: -36px;
+                left: 0;
+                transition: all 0.3s;
+            }
+            &:hover{
+                &::after{
+                    background-color: $blue;
+                }
+            }
+        }        
+    }
+}
+
+.header__line {
+    height: 1px;
+    width: 100%;
+    background-color: #7b7b7b;
+}
+.header__content{
+    text-align: center;
+    padding: 250px 0 190px;
+}
+.header__title-box{
+    margin-bottom: 100px;
+}
+.title{
+    font-size: 154px;
+    line-height: 170px;
+    text-transform: uppercase;
+    
+}
+.title-by{
+    color: $blue;
+    letter-spacing: 19px;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.header__btn{
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    width: 100px;
+    transition: all 0.5s;
+    &:hover{
+
+        &::before{
+            border-color: $blue;
+            top: 60px;
+            color: $blue;
+        }
+    }
+    &::before{
+        content: "\f078";
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 20px;
+        top: 50px;
+        left: 13px;
+        border: 1px solid #fff;
+        padding: 25px;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+}
+
+  //header end
+
+  //header start
+  //header start
