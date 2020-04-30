@@ -182,3 +182,52 @@
 }
 
 //dvantages end
+//about start
+.about__top{
+    background-color: #222222;
+    min-height: 447px;
+    
+
+}
+.about__inner{
+    display: flex;
+    justify-content: center;
+}
+.about__item{
+    width: 100%;
+    padding: 55px 0 50px;
+    &-box{
+        padding-right: 127px;
+        text-align: left;
+        float: right;
+        max-width: 587px;
+    }
+    &-title{
+        padding: 20px 0 42px;
+        
+    }
+    &-text{
+        max-width: 470px;
+        width: 100%;
+    }
+    
+    
+}
+.about__img{
+    background-image: url(../images/content-1.jpg);
+    min-height: 447px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about__bottom{
+    background-color: #f3f3f3;
+    color: #000;
+    .about__item-box{
+        float: left;
+        padding-left: 75px;
+        padding-right: 0;
+    }
+}
+//about end
