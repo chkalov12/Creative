@@ -63,6 +63,26 @@
         }
     }
 }
+.burger-btn{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $blue;
+        top: 15px;
+        left: 14px;
+        box-shadow: 0 4px 0 0 $blue, 0 8px 0 0 $blue;
+    }
+}
 
 .header__line {
     height: 1px;
@@ -82,6 +102,7 @@
     text-transform: uppercase;
 }
 .title-by {
+    animation-duration: 1.5s;
     color: $blue;
     letter-spacing: 19px;
     font-size: 25px;
@@ -155,7 +176,17 @@
 .advantages__item{
     max-width: 265px;
     width: 100%;
-    &-img{
+    animation-name: fadeInLeftBig;
+    &:nth-child(3){
+        animation-delay: 0.2s;
+    }
+    &:nth-child(2){
+        animation-delay: 0.4s;
+    }
+    &:nth-child(1){
+        animation-delay: 0.6s;
+    }
+    &-img{        
         margin: 0 auto;
         margin-bottom: 25px;
         width: 135px;
@@ -196,6 +227,7 @@
     justify-content: center;
 }
 .about__item{
+    animation-name: fadeInLeftBig;
     width: 100%;
     padding: 55px 0 50px;
     &-box{
@@ -217,12 +249,18 @@
     
 }
 .about__img{
+    animation-name: fadeInRightBig;
     background-image: url(../images/content-1.jpg);
     min-height: 447px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.about__top{
+    .about__item-box{
+        padding-left: 15px;
+       }
 }
 .about__bottom{
     background-color: #f3f3f3;
@@ -368,22 +406,168 @@
 }
 //phone end
 
+//team start
 
+.team{
+    padding: 40px 0 100px;
+text-align: center;
+}
+.team__title{
+    font-size: 247px;
+    line-height: 250px;
+    color: #d7d7d7;
+    font-weight: 700;
+    position: relative;
+    &::after{
+        content: "Our team";
+        color: #222222;
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        text-transform: uppercase;
+    }
+}
+.team__title-text{
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 75px;
+    color: #222;
+}
+.team__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.team__item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 414px;
+    max-width: 270px;
+    width: 100%;
+    position: relative;
+    &-name{
+        background-color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        color: $blue;
+        padding: 15px 25px 0;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200px;
+        & span{
+            display: block;
+            color: #222;
+            font-size: 15px;
+        }
+    }
+}
 
+//team end
 
+//form start
 
+.form{
+    background-image: url(../images/bg-form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    input{
+        color: #fff;
+        padding: 15px 25px;
+        background-color: transparent;
+        max-width: 370px;
+        width: 100%;
+        &::placeholder{
+            color: #fff;
+        }
+        & + input{
+            margin-left: 26px;
+        }
+    
+    }
+    textarea{
+        padding: 15px 25px;
+        width: 100%;
+        background-color: transparent;
+        min-height: 153px;
+        border: 1px solid #fff;
+        resize: none;
+        margin: 40px 0;
+        color: #fff;
+        
+        &::placeholder{
+            color: #fff;
+        }
+    
+    }
+}
+.form__title{
+    font-size: 247px;
+    line-height: 250px;
+    color: rgba(255,255,255,.5);
+    font-weight: 700;
+    position: relative;
+    &::after{
+        content: "We’d love to hear about your project.";
+        color: #fff;
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        text-transform: uppercase;
+    }
+}
+.form__btn{
+    cursor: pointer;
+    background-color: $blue;
+    border: none;
+    padding: 20px 61px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.5s;
+    
+    &:hover{
+        background-color: #2e85aa;
+        
+    }
+}
+//form end
 
+.map{
+    overflow-x: hidden;
+}
 
+.footer{
+    background-color: #222;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between; 
+    padding: 50px 0;
+    align-items: center;
+}
+.footer__text{
+    font-size: 13px;
+    color: #fff;
+}
+.footer__links{
+    a {
+       margin-left: 10px;
+       cursor: pointer;
+    }
+}
 
-
-
-
-
-
-
-
-
-//phone start
-//phone end
-//phone start
-//phone end
+@import 'media';

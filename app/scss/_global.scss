@@ -16,8 +16,6 @@ a {
 html,
 body {
     height: 100%;
-    overflow-x: hidden;
-    position: relative;
 }
 h1,
 h2,
@@ -51,4 +49,6 @@ body{
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 color: #fff;
+position: relative;
+
 }
