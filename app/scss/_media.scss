@@ -154,6 +154,28 @@
     }
 
 }
+@media (max-width: 410px) {
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .title-by {
+        letter-spacing: 5px;
+        font-size: 13px;
+        line-height: 18px;
+
+    }
+    .about__item-title{
+            font-size: 30px;
+            line-height: 40px;
+    }
+    .team__title::after,
+    .blog__title::after,
+    .advantages__title,
+    .form__title::after{        
+        font-size: 30px;
+    }
+}
 @media (max-width: 370px) {
     .phone__box-btn{
         &:hover{
