@@ -13,4 +13,11 @@ $(function() {
 
     new WOW().init();
 
+    $('.phone__img').slick({
+        fade: true,
+        arrows: false,
+        autoplay: true
+
+    })
+
 });

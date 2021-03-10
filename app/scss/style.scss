@@ -157,16 +157,6 @@
         text-transform: uppercase;
         position: relative;
         margin-bottom: 145px;
-        &::after {
-            content: "К";
-            position: absolute;
-            color: #404040;
-            font-weight: 700;
-            font-size: 247px;
-            left: 0;
-            right: 0;
-            z-index: -1;
-        }
     }
 }
 
@@ -193,9 +183,9 @@
         margin-bottom: 25px;
         width: 135px;
         height: 135px;
-        background-color: #404040;
+        background-color: #46443e;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 20%;
         display: flex;
         align-items: center;
         &::before {
@@ -284,23 +274,12 @@
 }
 
 .blog__title {
-    font-size: 247px;
-    line-height: 250px;
-    color: #d7d7d7;
-    font-weight: 700;
-    position: relative;
-    &::after {
-        content: "Возможности";
-        color: #222222;
-        font-size: 38px;
-        line-height: 50px;
-        font-weight: 400;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100px;
-        text-transform: uppercase;
-    }
+    color: #222222;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .blog__title-text {
@@ -373,12 +352,11 @@
 //articles end
 //phone start
 .phone {
-    background-attachment: fixed;
-    background-image: url(../images/imgbg1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     padding: 100px 0 50px;
+    &__img {
+        margin-top: 50px;
+        max-width: 460px;
+    }
 }
 
 .phone__inner {
@@ -415,13 +393,9 @@
 
 .phone__box-top {
     color: #404040;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(184, 184, 184, 0.75);
     padding: 10px;
     padding-bottom: 0;
-}
-
-.phone__img {
-    margin-right: 10px;
 }
 
 //phone end
@@ -429,26 +403,20 @@
 .team {
     padding: 40px 0 100px;
     text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/imgbg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .team__title {
-    font-size: 247px;
-    line-height: 250px;
-    color: #d7d7d7;
-    font-weight: 700;
-    position: relative;
-    &::after {
-        content: "Наши преподаватели";
-        color: #222222;
-        font-size: 38px;
-        line-height: 50px;
-        font-weight: 400;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100px;
-        text-transform: uppercase;
-    }
+    color: #222222;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .team__title-text {
@@ -533,23 +501,12 @@
 }
 
 .form__title {
-    font-size: 247px;
-    line-height: 250px;
-    color: rgba(255, 255, 255, .5);
-    font-weight: 700;
-    position: relative;
-    &::after {
-        content: "Записаться на курс";
-        color: #404040;
-        font-size: 38px;
-        line-height: 50px;
-        font-weight: 400;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100px;
-        text-transform: uppercase;
-    }
+    color: #fafafa;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .form__btn {
